@@ -5,6 +5,10 @@
   /* Makes the image round */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Helvetica', sans-serif;
   background: linear-gradient(135deg, rgb(0, 223, 223), #3d04ba, rgb(170, 19, 170));
