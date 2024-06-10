@@ -1,86 +1,135 @@
+.avatar {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  /* Makes the image round */
+}
+
 body {
-    font-family: 'Helvetica', sans-serif;
-  }
-  .header {
-    background: linear-gradient(135deg, #6db3f2, #1e69de);
-    padding: 10px 0;
-    text-align: center;
-    color: white;
-  }
-  .nav-links {
-    list-style: none;
-    padding: 0;
-  }
-  .nav-links li {
-    display: inline;
-    margin: 0 10px;
-  }
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-  }
-  .about-me {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  .work,
-  .surf-report {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  .work-title,
-  .surf-report-title {
-    font-size: 24px;
-    color: #333;
-  }
-  .work-content,
-  .surf-report-content {
-    font-size: 16px;
-    color: #666;
-  }
+  font-family: 'Helvetica', sans-serif;
+}
+
+.header {
+  background: linear-gradient(135deg, #6db3f2, #1e69de);
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.about-me {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.work,
+.surf-report {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.work-title,
+.surf-report-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.work-content,
+.surf-report-content {
+  font-size: 16px;
+  color: #666;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: white;
+}
+
+.portfolio-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 20px;
+  color: #333;
+}
+
+.portfolio-category {
+  font-size: 14px;
+  color: #666;
+}
+
+.contact {
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  margin: 10px 0;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a {
+  scroll-behavior: smooth;
+}
+
+/* Work images */
+.work-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Larger image for the first application */
+.first-app {
+  width: 150%;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
   .portfolio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    background: white;
+    grid-template-columns: 1fr;
+    /* Stack items on smaller screens */
   }
-  .portfolio-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-  .portfolio-title {
-    font-size: 20px;
-    color: #333;
-  }
-  .portfolio-category {
-    font-size: 14px;
-    color: #666;
-  }
-  .contact {
-    background: white;
-    padding: 20px;
-    text-align: center;
-  }
-  .contact-info {
-    margin: 10px 0;
-  }
-  .social-links {
-    list-style: none;
-    padding: 0;
-  }
-  .social-links li {
-    display: inline;
-    margin: 0 10px;
-  }
-  .social-links a {
-    text-decoration: none;
-    color: #333;
-  }
-    /* Add styles for social media icons */
-    .icon {
-    /* Style your icons here */
-  }
+
+  /* Add other responsive styles as needed */
+}
+
+/* Add styles for social media icons */
+.icon {}
